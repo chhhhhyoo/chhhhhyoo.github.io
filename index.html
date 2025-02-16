@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chan Hyun Yoo | Portfolio</title>
+    <style>
+        /* Basic Reset */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007acc;
+        }
+
+        section {
+            margin: 30px 0;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007acc;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-bottom: 5px;
+            color: #007acc;
+        }
+
+        .project p {
+            margin-bottom: 8px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header / About Me -->
+        <header>
+            <h1>Chan Hyun Yoo</h1>
+            <p>Data Scientist & Software Engineer | NYU '24</p>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills & Technologies</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello, I'm Chan Hyun Yoo – a passionate data scientist and computer scientist with a strong background
+                in machine learning, natural language processing, and software engineering. I graduated from NYU in May
+                2024 and have worked on diverse projects ranging from deep learning-based fashion recommendation systems
+                to big data analytics for vehicle collision safety and RAG based chatbot for domain-specific queries.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Project 1: LLM Chatbot for Document Search -->
+            <div class="project">
+                <h3>LLM Chatbot for Document Search</h3>
+                <p><strong>Technologies:</strong> LLM, FastAPI, Retrieval-Augmented Generation (RAG), Hybrid Search,
+                    Prompt Tuning</p>
+                <p><strong>Overview:</strong> Developed an advanced LLM-powered chatbot designed to retrieve relevant
+                    regulatory documents from vast bilingual datasets. The solution leverages FastAPI for scalable
+                    deployment and integrates hybrid search techniques with RAG for high-quality, precise answers.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>FastAPI Deployment – Built scalable RESTful endpoints for real-time chatbot interactions.</li>
+                    <li>Hybrid Search & RAG – Combined semantic search, BM25, and prompt tuning for accurate information
+                        retrieval.</li>
+                    <li>Bilingual Support – Effectively handled both English and Korean documents.</li>
+                    <li>Facilitated Communication – Collaborated with project management to ensure clear requirements
+                        and timely delivery.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, Document indexing(w/ Doc handling based on doc types), RAG,
+                    FastAPI, OpenAI API, Azure, Hybrid Search, Prompt Engineering</p>
+            </div>
+        </section>
+
+        <!-- Project 2: Fashion Recommendation System -->
+        <div class="project">
+            <h3>Fashion Recommendation System</h3>
+            <p><strong>Technologies:</strong> Deep Learning, Transfer Learning, ResNet, Inception, Ensemble Learning</p>
+            <p><strong>Overview:</strong> This project enhances fashion recommendations using deep learning‐based
+                classification and content‐based filtering. The system classifies clothing items using a ResNet-based
+                model and provides personalized recommendations based on extracted features.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Image Processing – Standardizes images and applies bounding box localization.</li>
+                <li>Deep Learning Model – Utilizes ResNet50V2 and Inception modules for classification.</li>
+                <li>Ensemble Learning – Multiple models improve robustness and accuracy.</li>
+                <li>Grad-CAM Visualization – Generates heatmaps for explainability.</li>
+                <li>Recommendation System – Uses cosine similarity for content-based recommendations.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> TensorFlow, OpenCV, NumPy, Pandas, Python</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chhhhhyoo/FashionRecommendation"
+                    target="_blank">Fashion Recommendation System</a></p>
+        </div>
+
+        <!-- Project 3: NYC Vehicle Collision Analysis -->
+        <div class="project">
+            <h3>NYC Vehicle Collision Analysis</h3>
+            <p><strong>Technologies:</strong> Big Data, Hadoop, HiveQL, Web Scraping, Tableau</p>
+            <p><strong>Overview:</strong> Analyzed NYC vehicle crash data to determine the safest car brands based on
+                real-world crash statistics and official safety ratings from NHTSA.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Big Data Processing – Used Hadoop MapReduce & HiveQL for large-scale data analysis.</li>
+                <li>Web Scraping – Extracted safety ratings from NHTSA using Selenium.</li>
+                <li>Comparative Analysis – Compared real-world injury rates with safety scores.</li>
+                <li>Data Visualization – Presented insights using Tableau.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Hadoop, Hive, Java, Python (Selenium), Tableau</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chhhhhyoo/Predictive-Big-Data-Analytics-Application"
+                    target="_blank">NYC Vehicle Collision Analysis</a></p>
+        </div>
+
+        <!-- Project 4: NLP Keyword Extraction -->
+        <div class="project">
+            <h3>NLP Keyword Extraction</h3>
+            <p><strong>Technologies:</strong> Natural Language Processing (NLP), TF-IDF, Graph-Based Ranking (PageRank,
+                PositionRank), KeyBERT</p>
+            <p><strong>Overview:</strong> A project to extract keywords from documents using various NLP techniques.
+                Multiple approaches—statistical, graph-based, and ML-based—were evaluated for optimal keyword retrieval.
+            </p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>TF-IDF & Machine Learning – Compared traditional term weighting with modern embedding-based methods.
+                </li>
+                <li>Graph-Based Ranking – Implemented PageRank & PositionRank to determine keyword importance.</li>
+                <li>Dynamic Thresholding – Utilized flexible keyword selection criteria.</li>
+                <li>Benchmarking – Evaluated methods on standard datasets like Inspec, DUC2001, and NUS.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, Scikit-learn, NetworkX, NLTK, KeyBERT</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/NYU-NLP-27/NLP_Keyword_Extraction"
+                    target="_blank">NLP Keyword Extraction</a></p>
+        </div>
+
+        <!-- Project 5: Ad Hoc Information Retrieval -->
+        <div class="project">
+            <h3>Ad Hoc Information Retrieval</h3>
+            <p><strong>Technologies:</strong> Information Retrieval, TF-IDF, Cosine Similarity</p>
+            <p><strong>Overview:</strong> Implemented a document retrieval system using TF-IDF and cosine similarity to
+                rank search results for user queries.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Text Preprocessing – Tokenization, stemming, and stopword removal.</li>
+                <li>TF-IDF Calculation – Converts text into a weighted numerical representation.</li>
+                <li>Cosine Similarity Matching – Finds the most relevant documents for user queries.</li>
+                <li>Efficient Search Engine – Outputs ranked search results based on similarity scores.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, Scikit-learn, NLTK, NumPy</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chhhhhyoo/NLP_Adhoc_Information_Retrieval"
+                    target="_blank">Ad Hoc Information Retrieval</a></p>
+        </div>
+
+        <!-- Skills & Technologies Section -->
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, JavaScript, TypeScript, Dart, C</li>
+                <li><strong>Machine Learning & Deep Learning:</strong> Supervised & Unsupervised Learning, Transfer
+                    Learning (ResNet, Inception), Ensemble Learning, CNNs, RNNs, LSTMs, Transformers</li>
+                <li><strong>Natural Language Processing (NLP):</strong> Text Preprocessing, TF-IDF, Keyword Extraction
+                    (TF-IDF, PageRank, KeyBERT), Cosine Similarity, Information Retrieval</li>
+                <li><strong>Data Engineering & Big Data:</strong> PostgreSQL, Hadoop MapReduce, HiveQL, Web
+                    Scraping (Selenium, BeautifulSoup), R, Tableau</li>
+                <li><strong>Deployment & MLOps:</strong> FastAPI for ML API Deployment, Model Interpretability
+                    (Grad-CAM, SHAP)</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience & Resume</h2>
+            <p>
+                I have held roles that span from data analysis and research to software engineering and digital
+                transformation. Highlights of my professional experience include:
+            </p>
+            <ul>
+                <li><strong>Data Analyst @ Epopcon:</strong> Improved data acquisition for over 1,000,000 products,
+                    developed training materials to streamline onboarding, and optimized codebases to transition from
+                    Java to TypeScript.</li>
+                <li><strong>Business Strategy Staff @ The Satellite Brewing Co:</strong> Utilized clustering algorithms
+                    and sentiment analysis to drive product refinements and marketing initiatives while enhancing
+                    cross-departmental collaboration.</li>
+                <li><strong>Republic of Korea Army:</strong> Served as a Special Communication Officer and Quick
+                    Reaction Force leader in the Republic of Korea Army, leading teams and managing internal
+                    communications to maintain operational excellence.</li>
+                <li><strong>Research Assistant @ L.E.K. Consulting:</strong> Conducted in-depth market research and data
+                    analysis for strategic M&A projects, leveraging Python for data cleansing and visualization to
+                    support decision-making.</li>
+                <li><strong>Software Asset Manager @ Denave:</strong> Automated data scraping processes to optimize
+                    client database creation and reactivated dormant client relationships, significantly enhancing
+                    engagement and retention strategies.</li>
+            </ul>
+            <p>
+                For a complete overview of my experience, please <a href="./ChanHyunYoo_resume.pdf"
+                    target="_blank">download my resume (PDF)</a>.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact & Social Links</h2>
+            <p>
+                I’d love to connect! Feel free to reach out via email or through my social channels:
+            </p>
+            <ul>
+                <li><strong>Email:</strong> chy353@nyu.edu</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chan-hyun-yoo/"
+                        target="_blank">linkedin.com/in/chan-hyun-yoo</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/chhhhhyoo"
+                        target="_blank">github.com/chhhhhyoo</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Chan Hyun Yoo. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
